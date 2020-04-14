@@ -8,6 +8,8 @@ public class SpaceNeedle {
 		tip();
 		mountain1();
 		valley();
+		body();
+		mountain1();
 
 	}
 		public static void tip() {
@@ -61,7 +63,32 @@ public class SpaceNeedle {
 				System.out.print("/");
 				System.out.println();
 			}
-		
+			for (int i=0; i<SPACE;i++){
+				for (int x=0; x<(3*SPACE);x++){
+					System.out.print(" ");
+				}
+				System.out.print("||");
+				System.out.println();
+			}
+			
+		}
+		public static void body(){
+			for (int i=0; i<(4*SPACE);i++){
+				for (int x=0; x<(2*SPACE)+1;x++){
+					System.out.print(" ");
+				}
+				System.out.print("|");
+				for (int x=0; x<(SPACE-2);x++){
+					System.out.print("%");
+				}
+				System.out.print("||");
+				for(int x=0; x<(SPACE-2);x++){
+					System.out.print("%");
+				}
+				System.out.print("|");
+				System.out.println();
+			}
+
 		}
 }
 			
